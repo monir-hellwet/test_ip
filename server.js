@@ -12,6 +12,11 @@ function getClientIp (req) {
   }
 
 app.get('/', (req, res)=>{
+    res.send("run server")
+//     const clientIp = getClientIp(req)
+//   res.send(`Your IP address is: ${clientIp}`)
+})
+app.get('/check', (req, res)=>{
     const clientIp = getClientIp(req)
   res.send(`Your IP address is: ${clientIp}`)
 })
